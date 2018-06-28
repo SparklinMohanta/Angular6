@@ -1,0 +1,12 @@
+h1{
+    color: blueviolet
+}
+div{
+    text-align: center
+}
+a{
+    font-weight: bold
+}
+a:hover{
+    color:red;
+}

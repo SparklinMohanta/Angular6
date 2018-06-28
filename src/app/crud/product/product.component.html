@@ -1,0 +1,12 @@
+<a routerLink="/">Back</a>
+<h4>Add new Product</h4>
+<form id="forNewProduct" name="forNewProduct" #productData="ngForm" (ngSubmit)="addNewProduct(productData.value)">
+  <label>Name : </label><input type="text" name="name" id="name" placeholder="name" ngModel> <br>
+  <label>Color : </label><input type="text" name="color" id="color" placeholder="color" ngModel> <br>
+  <input type="submit" value="Add Product">
+</form>
+
+<br>
+<h4 *ngIf ="isAdded" >
+  {{confirmationString}}
+</h4>

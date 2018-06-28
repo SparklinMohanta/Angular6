@@ -1,0 +1,33 @@
+<p>
+  inbuiltdirective works!
+</p>
+<div>
+  <div *ngIf="friends.length>0; then someFriends else noFriends"> </div>
+  <ng-template #someFriends>
+    List of Friends:
+    <br>
+    <ul>
+      <li *ngFor="let one of friends;let counter=index">{{counter}}.{{one}}</li>
+    </ul>
+  </ng-template>  
+  <!-- <div *ngIf="friends.length==0"> </div>-->
+    <ng-template #noFriends>
+        No Friends
+    </ng-template> 
+  <hr>
+  <h4>Switch Case</h4>
+  <ul>
+    <li [class.active]="name=='sparklin'"><a (click)="name='sparklin'"> <button>Sparklin</button></a></li>
+    <li [class.active]="name=='adi'"><a (click)="name='adi'"> <button>adi</button></a></li>
+    <li [class.active]="name=='Nikhil'"><a (click)="name='Nikhil'"> <button>Nikhil</button></a></li>
+    <!-- <li><a href=""> Adi</a></li> 
+    <li><a href=""> Nikhil</a></li>-->
+  </ul>
+  <div [ngSwitch]="name">
+    <div *ngSwitchCase="'sparklin'">My name is Sparklin</div>
+    <div *ngSwitchCase="'adi'">My name is Adi</div>
+    <div *ngSwitchCase="'Nikhil'">My name is Nikhil</div>
+    <div *ngSwitchDefault>Default Name</div>
+  </div>
+    
+</div>

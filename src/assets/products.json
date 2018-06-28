@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "t-shirt",
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "name": "jeans",
+      "color": "blue"
+    },
+    {
+      "id": 3,
+      "name": "tie",
+      "color": "black"
+    },
+    {
+      "id": 4,
+      "name": "shoes",
+      "color": "black"
+    },
+    {
+      "id": 5,
+      "name": "hat",
+      "color": "green"
+    },
+    {
+      "id": 6,
+      "name": "shirt",
+      "color": "white"
+    },
+    {
+      "name": "Hat",
+      "color": "Green",
+      "id": 8
+    },
+    {
+      "name": "coat",
+      "color": "red",
+      "id": 9
+    }
+  ]
+}

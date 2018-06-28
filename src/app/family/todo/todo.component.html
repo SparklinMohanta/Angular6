@@ -1,0 +1,29 @@
+<p>
+  todo works!
+</p>
+
+  <h3>Task List</h3>
+  
+  Add Task: <input type="text"[(ngModel)]="oneTask">
+  <button (click)="addTask()">AddTask</button>
+  <ol>
+  <li *ngFor="let t of task; let currentTask=index">
+    Task {{currentTask}}:{{t | uppercase}}
+
+    <button (click)="removeTask(currentTask)">Remove</button>
+   
+  </li>
+  <b>Money: </b>{{ money | currency:'INR'}} <br>
+  <b>Date: </b>{{myDate | date:'fullDate'}} <br>
+  <b>Date with Time: </b>{{myDate | date:'MMM d, y, h:mm:ss a'}} <br>
+  <b>Percent: </b>{{ money/100 | percent:'2.0'}} <br><br>
+
+  <!-- <b>Numbers without SortPipe: </b>{{scores}} <br>
+  <b>Numbers Sort: </b>{{scores | sortNumber:'dsc'}} <br>
+  <b>Fruits Sort: </b>{{fruits | sortNumber:'asc'}} <br> -->
+  
+</ol>
+
+
+
+
